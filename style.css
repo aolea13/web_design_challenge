@@ -1,0 +1,62 @@
+/* Body */
+body{
+    background-color: lightgray;
+}
+
+/* Navbar */
+.navbar{
+    max-height: 60px;
+}
+.navigation.navbar-band{
+    color: white;
+    margin-left: 40px;
+    padding: inherit;
+    font-weight: bold;
+    background-color: darkgrey;
+    font-family: Georgia, 'Times', Times, serif;
+}
+.navbar{
+    background-color: white;
+    font-size: 15px;
+}
+.active, .dropdown-menu.dropdown-item:active a:hover{
+    background-color:darkcyan !important;
+}
+.dropdown-item{
+    color: white !important;
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color:darkcyan !important;
+}
+a{
+    color: white;
+    font-size: 15px;
+}
+.nav-link:hover{
+    background-color:darkcyan !important;
+}
+.nav-brand:hover{
+    color: rgb(175, 175, 175) !important;
+}
+
+/* Images */
+img{
+    width: 100% !important;
+    height: 100% !important;
+}
+.active, .panel:hover{
+    border-color: darkcyan;
+    border-style: solid;
+}
+.visualization{
+    width: 50% !important;
+    height: 50% !important;
+}
+
+/* Content */
+
+p{
+    color: white;
+    font-family: Times, sans-serif;
+    font-size: 17px; 
+   }
