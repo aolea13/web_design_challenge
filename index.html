@@ -4,16 +4,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name = 'viewport' content='width-device-width, initial-scale=1'>
 
-    <!BootStrap CSS>
+<!BootStrap CSS>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <!Link to Style Sheet>
-    <link rel='stylesheet' type='css' href='style.css'
+<!Link to Style Sheet>
+    <link rel='stylesheet' type='css' href='style.css'>
 
   </head>
 
 <body>
-    <!Nav>
+<!Nav>
         <div class = 'navigation'>
             <nav class = 'navbar navbar-expand-lg navbar-light'>
                 <a class="navbar-brand" style = 'background-color:cyan' href= 'index.html'>Latitude</a>
@@ -42,8 +42,60 @@
             </nav>
         </div>
 
+<!Content>
+<div class = 'container'>
+    <div clss = 'row'>
+        <div class = 'col-lg-7 col-md-12'>
 
+<!Left Box>
+            <div class = 'box'>
+                <h3 class = 'title'>Summary: Latitude vs. X</h3>
+                <hr>
+                <img src = 'Resources/assets:images/Fig1.png' class = 'vizualization rounded float-left' alt = 'Max Temp Graph'>
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+                    accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
+                    500 cities.</p>
+                  <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                    Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
+                    source data and visualizations created as part of the analysis, as well as explanations and descriptions of
+                    any trends and correlations witnessed.</p>
 
+            </div>
+        </div>
+        <div class = 'col-lg-5 col-md-12'>
+
+<!Right Box>
+            <div class = 'box'>
+                <h5 class = 'title'>Visualizations</h5>
+                <hr>
+                <div class = 'container'>
+                    <div class = 'row' style= 'padding-bottom: 30px;'>
+                        <div class = 'col-6'>
+                          <a href = 'max_temp.html'>
+                              <img class = 'panel' src = 'Resources/assets:images/Fig1.png'>
+                          </a>  
+                        </div>
+                        <div class = 'col-6'>
+                            <a href = 'humidity.html'>
+                                <img class = 'panel' src = 'Resources/assets:images/Fig2.png'> 
+                            </a>
+                        </div>
+                        <div class = 'col-6'>
+                            <a href = 'cloudiness.html'>
+                                <img class = 'panel' src = 'Resources/assets:images/Fig3.png'>
+                            <a/>
+                        </div> 
+                        <div class = 'col-6'>
+                            <a href = 'cloudiness.html'>
+                                <img class = 'panel' src = 'Resources/assets:images/Fig3.png'>
+                            <a/>
+                        </div>    
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+</div>
 
 
 
