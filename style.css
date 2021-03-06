@@ -53,6 +53,13 @@ img{
     height: 50% !important;
 }
 
+/* Title Class */
+.title{
+    color: darkcyan;
+    font-family: Georgia, 'Times', Times, serif;
+    font-size: 18px;
+}
+
 /* Content */
 
 p{
@@ -60,3 +67,18 @@ p{
     font-family: Times, sans-serif;
     font-size: 17px; 
    }
+
+/* Box Class */
+.box{
+    margin-top: 65px;
+    margin-bottom: 65px;
+    padding: 10px 20px 15px;
+    color: black;
+    background-color: white;
+}
+
+/* Table */
+.table{
+    font-size: 15 pix;
+    border-top-color: white !important;
+}
