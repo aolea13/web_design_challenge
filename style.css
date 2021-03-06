@@ -82,3 +82,22 @@ p{
     font-size: 15 pix;
     border-top-color: white !important;
 }
+
+/* Footer */
+footer{
+    background-color: white;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: darkgray;
+    color: white;
+    min-height: 60px;
+    font-family: Georgia, 'Times', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+}
+
