@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = 'viewport' content='width-device-width, initial-scale=1'>
+
+<!BootStrap CSS>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!Link to Style Sheet>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+
+  </head>
+
+<body>
+<!Nav>
+    <div class = 'navigation'>
+        <nav class = 'navbar navbar-expand-lg navbar-light'>
+            <a class="navbar-brand" style = 'background-color:darkcyan' href = 'index.html'>Latitude</a>
+            <button class ='navbar-toggler border border-white' type= 'button' data-toggle = 'collapse' data-target = '#navbarNavDropdown' aria-controls = 'navbarNavDropdown' aria-expanded = 'false' aira-label = 'Toggle navigation'>
+                <span class ='navbar-toggler-icon'></span>
+            </button>
+            <div class = 'collapse navbar-collapse' id='navbarNavDropdown'>
+                <ul class = 'navbar-nav ml-auto'>
+                    <li class = 'nav-item dropdown'>
+                        <a class = 'nav-link dropdown-toggle' href="#" id='navbarDropdownMenuLink' data-toggle = 'dropdown' aria-haspopup = 'true' aria-expanded = 'false'>Plots</a>
+                        <div class = 'dropdown-menu' aria-labelledby = 'navbarDropdownMenuLink'>
+                            <a class = 'dropdown-item' href = 'max_temp.html'>Max Temp</a>
+                            <a class = 'dropdown-item active' href = 'cloudiness.html'>Cloudiness</a>
+                            <a class = 'dropdown-item' href = 'humidity.html'>Humidity</a>
+                            <a class = 'dropdown-item' href = 'wind_speed.html'>Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class = 'nav-item'>
+                        <a class = 'nav-link' href = 'comparison.html'>Comparison</a>
+                    </li>
+                    <li class = 'nav-item'>
+                        <a class = 'nav-link' href = 'data.html'>Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!Content>
+<div class = 'container'>
+    <div clss = 'row'>
+        <div class = 'col-lg-7 col-md-12'>
+
+<!Left Box>
+            <div class = 'box'>
+                <h3 class = 'title'>Cloudiness</h3>
+                <hr>
+                <img src = 'Resources/assets:images/Fig3.png' class = 'visualization rounded float-left' alt = 'Cloudiness'>
+                <p>Cloudiness seems to have no correlation with a change in latitude</p>
+            </div>
+        </div>
+        <div class = 'col-lg-5 col-md-12'>
+
+<!Right Box>
+            <div class = 'box'>
+                <h5 class = 'title'>Visualizations</h5>
+                <hr>
+                <div class = 'container'>
+                    <div class = 'row' style= 'padding-bottom: 30px;'>
+                        <div class = 'col-6'>
+                          <a href = 'max_temp.html'>
+                              <img class = 'panel' src = 'Resources/assets:images/Fig1.png'>
+                          </a>  
+                        </div>
+                        <div class = 'col-6'>
+                            <a href = 'humidity.html'>
+                                <img class = 'panel' src = 'Resources/assets:images/Fig2.png'> 
+                            </a>
+                        </div>
+                        <div class = 'col-6'>
+                            <a href = 'cloudiness.html'>
+                                <img class = 'panel' src = 'Resources/assets:images/Fig3.png'>
+                            </a>
+                        </div> 
+                        <div class = 'col-6'>
+                            <a href = 'cloudiness.html'>
+                                <img class = 'panel' src = 'Resources/assets:images/Fig3.png'>
+                            </a>
+                        </div>    
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+</div>
+
+<!Footer>
+<footer>
+    <div class ='footer'>Austin Olea 2021</div>
+</footer>
+
+<!BootStrap JS>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+</html>
