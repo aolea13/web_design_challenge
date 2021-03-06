@@ -12,7 +12,7 @@
     crossorigin="anonymous">
 
   <!--CSS Link-->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style_live.css">
 
 </head>
 
@@ -54,15 +54,15 @@
   </div>
 
 <!---Content-->
-    <div class="container">
+    <div class="container box">
         <div class="row">
           <div class="col-md-12">
+            <h3 class="title">📡 Live Interactive Map</h3>
+            <p>This map shows current tempreatre and wind paterns world wide.(Zoom and Drag on Map to See more)</p>
+            <hr>
             <!-- Left box  -->
-            <div class="box">
-              <h3 class="title">📡 Live Interactive Map</h3>
-              <p>This map shows current tempreatre and wind paterns world wide.(Zoom and Drag on Map to See more)</p>
-              <hr>
-              <iframe width= "1070" height="900" src="https://embed.windy.com/embed2.html?lat=26.589&lon=-104.941&detailLat=39.739&detailLon=-104.987&width=auto&height=450&zoom=3&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=%C2%B0F&radarRange=-1" frameborder="0"></iframe>
+            <div class="container-fluid">
+                <iframe class="responsive-iframe" width= "1070" height="900" src="https://embed.windy.com/embed2.html?lat=26.589&lon=-104.941&detailLat=39.739&detailLon=-104.987&width=auto&height=450&zoom=3&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=%C2%B0F&radarRange=-1" frameborder="0"></iframe>
             </div>
           </div>
           <div class="col-md-12">
