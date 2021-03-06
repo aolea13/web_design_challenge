@@ -21,13 +21,13 @@ body{
     font-size: 15px;
 }
 .active, .dropdown-menu.dropdown-item:active a:hover{
-    background-color:darkcyan !important;
+    background-color: lightgray !important;
 }
 .dropdown-item{
-    color: white !important;
+    color:darkcyan !important;
 }
 .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
-    background-color:darkcyan !important;
+    background-color: darkgray !important;
 }
 a{
     color: white;

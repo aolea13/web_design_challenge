@@ -1,102 +1,122 @@
-<!DOCTYPE html> 
-<html> 
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name = 'viewport' content='width-device-width, initial-scale=1'>
+<!DOCTYPE html>
+<html>
 
-<!BootStrap CSS>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Web_Design_Challenge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!Link to Style Sheet>
-    <link rel='stylesheet' type='text/css' href='style.css'>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
 
-  </head>
+  <!--CSS Link-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
 
 <body>
-<!Nav>
-    <div class = 'navigation'>
-        <nav class = 'navbar navbar-expand-lg navbar-light'>
-            <a class="navbar-brand" style = 'background-color:darkcyan' href = 'index.html'>Latitude</a>
-            <button class ='navbar-toggler border border-white' type= 'button' data-toggle = 'collapse' data-target = '#navbarNavDropdown' aria-controls = 'navbarNavDropdown' aria-expanded = 'false' aira-label = 'Toggle navigation'>
-                <span class ='navbar-toggler-icon'></span>
-            </button>
-            <div class = 'collapse navbar-collapse' id='navbarNavDropdown'>
-                <ul class = 'navbar-nav ml-auto'>
-                    <li class = 'nav-item dropdown'>
-                        <a class = 'nav-link dropdown-toggle' href="#" id='navbarDropdownMenuLink' data-toggle = 'dropdown' aria-haspopup = 'true' aria-expanded = 'false'>Plots</a>
-                        <div class = 'dropdown-menu' aria-labelledby = 'navbarDropdownMenuLink'>
-                            <a class = 'dropdown-item' href = 'max_temp.html'>Max Temp</a>
-                            <a class = 'dropdown-item active' href = 'cloudiness.html'>Cloudiness</a>
-                            <a class = 'dropdown-item' href = 'humidity.html'>Humidity</a>
-                            <a class = 'dropdown-item' href = 'wind_speed.html'>Wind Speed</a>
-                        </div>
-                    </li>
-                    <li class = 'nav-item'>
-                        <a class = 'nav-link' href = 'comparison.html'>Comparison</a>
-                    </li>
-                    <li class = 'nav-item'>
-                        <a class = 'nav-link' href = 'data.html'>Data</a>
-                    </li>
-                </ul>
+  <!-- Navigation Section -->
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a>
+      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item active" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
             </div>
-        </nav>
-    </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
 
-<!Content>
-<div class = 'container'>
-    <div clss = 'row'>
-        <div class = 'col-lg-7 col-md-12'>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Content Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-12">
+        <!-- Left box  -->
+        <div class="box">
+          <h3 class="title">Cloudiness</h3>
+          <hr>
+          <img src="Resources/assets:images/Fig3.png" class="vizualization rounded float-left" alt="Cloudiness">
+          <p>We do not see a clear corelation between cloudiness and a change in latitude.</p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12">
+        <!-- Right Box -->
+        <div class="box">
+          <h5 class="title">Visualizations</h5>
+          <hr>
 
-<!Left Box>
-            <div class = 'box'>
-                <h3 class = 'title'>Cloudiness</h3>
-                <hr>
-                <img src = 'Resources/assets:images/Fig3.png' class = 'visualization rounded float-left' alt = 'Cloudiness'>
-                <p>Cloudiness seems to have no correlation with a change in latitude</p>
+
+          <div class="container">
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-6">
+                <a href="max_temp.html">
+                  <img class="panel" src="Resources/assets:images/Fig1.png" alt="Max Temperature Image">
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="humidity.html">
+                  <img class="panel" src="Resources/assets:images/Fig2.png" alt="Humidity Graph">
+                </a>
+              </div>
             </div>
-        </div>
-        <div class = 'col-lg-5 col-md-12'>
 
-<!Right Box>
-            <div class = 'box'>
-                <h5 class = 'title'>Visualizations</h5>
-                <hr>
-                <div class = 'container'>
-                    <div class = 'row' style= 'padding-bottom: 30px;'>
-                        <div class = 'col-6'>
-                          <a href = 'max_temp.html'>
-                              <img class = 'panel' src = 'Resources/assets:images/Fig1.png'>
-                          </a>  
-                        </div>
-                        <div class = 'col-6'>
-                            <a href = 'humidity.html'>
-                                <img class = 'panel' src = 'Resources/assets:images/Fig2.png'> 
-                            </a>
-                        </div>
-                        <div class = 'col-6'>
-                            <a href = 'cloudiness.html'>
-                                <img class = 'panel' src = 'Resources/assets:images/Fig3.png'>
-                            </a>
-                        </div> 
-                        <div class = 'col-6'>
-                            <a href = 'cloudiness.html'>
-                                <img class = 'panel' src = 'Resources/assets:images/Fig3.png'>
-                            </a>
-                        </div>    
-                    </div>
-                </div>
-            </div>       
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-6">
+                <a href="cloudiness.html">
+                  <img class="panel" src="Resources/assets:images/Fig3.png" alt="Cloudiness Graph">
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="wind_speed.html">
+                  <img class="panel" src="Resources/assets:images/Fig4.png" alt="Wind Speed Graph">
+                </a>
+              </div>
+
+
+            </div>
+          </div>
+
+
         </div>
+      </div>
     </div>
-</div>
+  </div>
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer">Austin Olea 2021</div>
+  </footer>
 
-<!Footer>
-<footer>
-    <div class ='footer'>Austin Olea 2021</div>
-</footer>
-
-<!BootStrap JS>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>

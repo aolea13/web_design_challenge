@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Web_Design_Challenge</title>
+  <title>Bootstrap Visualization Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
@@ -29,11 +29,11 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+              aria-haspopup="true" aria-expanded="false" style="color: #6D8092">
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item active" href="max_temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
               <a class="dropdown-item" href="humidity.html">Humidity</a>
               <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
               <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
@@ -53,61 +53,54 @@
   <!-- Content Section -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 col-md-12">
+      <div>
         <!-- Left box  -->
         <div class="box">
-          <h3 class="title">Max Temperature</h3>
+          <h3 class="title">Comparison: Latitude vs X</h3>
           <hr>
-          <img src="Resources/assets:images/Fig1.png" class="vizualization rounded float-left" alt="Max Temp">
-          <p> As we expect, the weather becomes warmer as we get close to the equator.</p>
-        </div>
-      </div>
-      <div class="col-lg-5 col-md-12">
-        <!-- Right Box -->
-        <div class="box">
-          <h5 class="title">Visualizations</h5>
-          <hr>
-
-
-          <div class="container">
-            <div class="row" style="padding-bottom: 30px;">
-              <div class="col-6">
+          <p>Click any plot to see further analysis.</p>
+          <div class="container" style="padding-bottom: 40px;">
+            <div class="row">
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title">vs. Max Temperature</div>
                 <a href="max_temp.html">
                   <img class="panel" src="Resources/assets:images/Fig1.png" alt="Max Temperature Image">
                 </a>
               </div>
-              <div class="col-6">
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title">vs. Humidity</div>
                 <a href="humidity.html">
                   <img class="panel" src="Resources/assets:images/Fig2.png" alt="Humidity Graph">
                 </a>
               </div>
             </div>
 
-            <div class="row" style="padding-bottom: 30px;">
-              <div class="col-6">
+            <div class="row">
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title">vs. Cloudiness</div>
                 <a href="cloudiness.html">
                   <img class="panel" src="Resources/assets:images/Fig3.png" alt="Cloudiness Graph">
                 </a>
+
               </div>
-              <div class="col-6">
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title">vs. Wind Speed</div>
                 <a href="wind_speed.html">
                   <img class="panel" src="Resources/assets:images/Fig4.png" alt="Wind Speed Graph">
                 </a>
               </div>
-
-
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
   </div>
+
   <!-- Footer Section -->
   <footer>
     <div class="footer">Austin Olea 2021</div>
   </footer>
+
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
